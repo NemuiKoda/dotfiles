@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-for_window [class="^.*"] border pixel 1 
+for_window [class="^.*"] border pixel 0 
 
 set $mod Mod4
 
@@ -29,14 +29,15 @@ gaps outer 2px
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+# Start window compositor
 exec --no-startup-id picom
-exec_always --no-startup-id dunst
-exec_always killall dunst
+# Start notification daemon
+exec --no-startup-id dunst &
+# Set random background with feh
 exec_always --no-startup-id feh --randomize --bg-scale ~/.config/background/*
+# Kill all polybar instance, then start polybar on every available monitor
 exec_always killall polybar
 exec_always --no-startup-id sh ~/.config/polybar/launch_polybar.sh
-
-#exec --no-startup-id polybar
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
