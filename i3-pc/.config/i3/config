@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 1 
 
 set $mod Mod4
 
@@ -17,14 +17,25 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:Meslo LGM Nerd Font 12 
 
+
+# Gaps between windows and sides 
+gaps inner 8px
+
+# Gaps between window and screen borders (negative px to remove gaps to screen borders)
+gaps outer 2px
+
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
 exec --no-startup-id picom
-exec_always --no-startup-id feh --randomize --bg-fill ~/.config/background/*
+exec_always --no-startup-id dunst
+exec_always killall dunst
+exec_always --no-startup-id feh --randomize --bg-scale ~/.config/background/*
 exec_always killall polybar
 exec_always --no-startup-id sh ~/.config/polybar/launch_polybar.sh
+
 #exec --no-startup-id polybar
 
 # Start XDG autostart .desktop files using dex. See also
