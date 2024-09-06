@@ -29,12 +29,16 @@ gaps outer 2px
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+# Turn second monitor
+exec --no-startup-id sh ~/.local/bin/t-m
 # Start window compositor
 exec --no-startup-id picom
 # Start notification daemon
 exec --no-startup-id dunst &
 # Set random background with feh
-exec_always --no-startup-id feh --randomize --bg-scale ~/.config/background/*
+# exec_always --no-startup-id feh --randomize --bg-scale ~/.config/background/normal/* --bg-max ~/.config/background/flipped/*
+# Restore nitrogen backgrounds
+exec nitrogen --restore &
 # Kill all polybar instance, then start polybar on every available monitor
 exec_always killall polybar
 exec_always --no-startup-id sh ~/.config/polybar/launch_polybar.sh
