@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Power menu script using rofi
+#
+# Options:
+
+lock=' Lock'
+suspend=' Suspend'
+reboot=' Reboot'
+shutdown=' Power Off' 
+logout=' Log Out'
+
+
+CHOSEN=$(echo -e "${lock}\n${suspend}\n${reboot}\n${shutdown}\n${logout}" | rofi -dmenu -i -theme-str '@import "powermenu.rasi"')
+
+case "$CHOSEN" in
+	$lock) betterlockscreen -l ;;
+	$suspend) systemctl suspend ;;
+	$reboot) reboot ;;
+	$shutdown) poweroff ;;
+	$logout) i3-msg exit ;;
+	*) exit 1 ;;
+esac
