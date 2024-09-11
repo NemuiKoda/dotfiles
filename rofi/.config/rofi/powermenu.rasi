@@ -1,0 +1,40 @@
+/* Configuration */
+
+configuration {
+  show-icons: false;
+
+}
+
+
+/* Global Properties */
+@import               "catppuccin-mocha"
+@import               "fonts"
+ 
+
+inputbar {
+    enabled: false;
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     20px;
+    background-color:            transparent;
+    children:                    [ "listview" ];
+}
+
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 5;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+
+    spacing: 5px;
+}
