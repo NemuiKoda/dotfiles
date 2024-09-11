@@ -34,7 +34,7 @@ exec --no-startup-id picom
 # Start notification daemon
 exec --no-startup-id dunst &
 # Set random background with feh
-exec_always --no-startup-id feh --bg-scale ~/.config/background/*
+exec_always --no-startup-id feh --randomize --bg-fill ~/.config/wallpaper/*
 # Kill all polybar instances, then start polybar on every available monitor
 exec_always pkill polybar
 exec_always --no-startup-id sh ~/.config/polybar/launch_polybar.sh
