@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Increment, decrement backlight with brightnessctl and send notification
+
+case $1 in 
+  up)
+    # Increase brightness
+    brightnessctl set 5%+
+    ;;
+  down)
+    # Decrease brightness
+    brightnessctl set 5%-
+esac
+
+let curr_brightness=$(brightnessctl get)
+let max_brightness=$(brightnessctl max)
+
+let PERCENT=($curr_brightness\*100/$max_brightness)
+
+send_notification() {
+  dunstify -a "Brightness" -r 9994 -h int:value:"$PERCENT" "Currently at ${PERCENT}%" -t 2000
+}
+
+send_notification;
+
