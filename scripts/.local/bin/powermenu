@@ -10,6 +10,7 @@ reboot=' Reboot'
 shutdown=' Power Off' 
 logout=' Log Out'
 
+home=$HOME
 
 CHOSEN=$(echo -e "${lock}\n${suspend}\n${reboot}\n${shutdown}\n${logout}" | rofi -dmenu -i -theme-str '@import "powermenu.rasi"')
 
