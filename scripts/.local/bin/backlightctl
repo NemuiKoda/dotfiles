@@ -5,12 +5,12 @@
 case $1 in 
   up)
     # Increase brightness
-    brightnessctl set 5%+
+    brightnessctl set 1%+
     ICON="sun"
     ;;
   down)
     # Decrease brightness
-    brightnessctl set 5%-
+    brightnessctl set 1%-
     ICON="moon"
 esac
 
