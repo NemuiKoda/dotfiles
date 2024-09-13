@@ -6,10 +6,12 @@ case $1 in
   up)
     # Increase brightness
     brightnessctl set 5%+
+    ICON="sun"
     ;;
   down)
     # Decrease brightness
     brightnessctl set 5%-
+    ICON="moon"
 esac
 
 let curr_brightness=$(brightnessctl get)
@@ -18,7 +20,7 @@ let max_brightness=$(brightnessctl max)
 let PERCENT=($curr_brightness\*100/$max_brightness)
 
 send_notification() {
-  dunstify -a "Brightness" -r 9994 -h int:value:"$PERCENT" "Currently at ${PERCENT}%" -t 2000
+  dunstify -a "Brightness" -r 9994 -h int:value:"$PERCENT" -i "/home/koda/.config/dunst/icons/$ICON.svg" "Currently at ${PERCENT}%" -t 2000
 }
 
 send_notification;
