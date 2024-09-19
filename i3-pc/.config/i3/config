@@ -34,7 +34,7 @@ exec --no-startup-id sh ~/.local/bin/t-m
 # Start window compositor
 exec --no-startup-id picom
 # Start notification daemon
-exec --no-startup-id dunst &
+exec_always --no-startup-id dunst &
 # Set random background with feh
 # exec_always --no-startup-id feh --randomize --bg-scale ~/.config/background/normal/* --bg-max ~/.config/background/flipped/*
 # Restore nitrogen backgrounds
