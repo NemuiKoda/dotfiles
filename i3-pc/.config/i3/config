@@ -30,7 +30,7 @@ gaps outer 2px
 #font pango:DejaVu Sans Mono 8
 
 # Turn second monitor
-exec --no-startup-id sh ~/.local/bin/t-m
+# exec --no-startup-id sh ~/.local/bin/t-m
 # Start window compositor
 exec --no-startup-id picom
 # Start notification daemon
