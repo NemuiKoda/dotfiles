@@ -18,11 +18,11 @@
         "custom/power",
         "custom/screenshot",
         "bluetooth",
-        "pulseaudio",
-        "network",
         "backlight",
         "battery",
         "battery#bat2",
+        "pulseaudio",
+        "network",
         "clock"
     ],
     // Modules configuration
