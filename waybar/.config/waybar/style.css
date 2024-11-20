@@ -19,7 +19,17 @@ window#waybar {
    background-color: #191724
 }
 
-#custom-apps, #workspaces, #window, #clock, #network, #pulseaudio {
+#tools { 
+  border: 1px solid #524f67; 
+  border-radius: 12px;
+  margin: 4px 4px 4px 4px;
+  padding: 0px 8px 0px 8px
+} 
+
+#group-power {
+}
+
+#custom-apps, #workspaces, #window, #clock, #network {
    border-radius: 12px;
    background-color: #26233a;
    color: #e0def4; 
@@ -33,8 +43,16 @@ window#waybar {
    font-size: 16px
 }
 
-#custom-power, #custom-screenshot, #bluetooth {
-  font-size: 20px;
+#custom-power, #custom-screenshot, #custom-quit, #custom-lock, #custom-reboot, #bluetooth {
+  font-size: 22px;
+  color: #e0def4;
+  margin: 4px 4px 4px 4px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+#backlight, #pulseaudio, #battery {
+  font-size: 24px;
   color: #e0def4;
   margin: 4px 4px 4px 4px;
   padding-right: 2px;
