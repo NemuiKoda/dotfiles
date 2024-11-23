@@ -117,11 +117,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}",
+        "format": "<span color='#eb6f92'>{icon}</span>",
         "tooltip-format": "{capacity}% {timeTo}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format-full": "<span color='#e0def4'>{icon}</span>",
+        "format-charging": "<span color='#9ccfd8'>{icon}</span>",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
