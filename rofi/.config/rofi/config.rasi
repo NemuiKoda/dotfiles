@@ -15,4 +15,4 @@ configuration{
     width: 50%;
 }
 
-@theme "catppuccin-mocha"
+@theme "rose-pine"
