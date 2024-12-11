@@ -3,6 +3,7 @@
 * {
 	bg: #191724;
 	cur: #1f1d2e;
+  ovr: #26233a;
 	fgd: #e0def4;
 	cmt: #6e6a86;
 	cya: #9ccfd8;
@@ -119,6 +120,7 @@
 }
 #inputbar {
 	spacing:    0;
+  background-color: @cur;
 	text-color: @foreground;
 	padding:    6px ;
   border: 1px;
@@ -142,7 +144,7 @@
 }
 #textbox-prompt-colon {
 	expand:     false;
-	str:        ":";
+	str:        "";
 	margin:     0px 0.3em 0em 0em;
 	text-color: @grn;
 }
