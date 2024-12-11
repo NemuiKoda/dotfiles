@@ -47,7 +47,7 @@
           "pulseaudio",
           "backlight",
           "battery"
-        ],
+        ]
         //"drawer": {
          // "transition-duration": 500,
          // "children-class": "toolies",
@@ -59,13 +59,13 @@
       "drawer": {
         "transition-duration": 500,
         "children-class": "not-power",
-        "transition-left-to-right": false,
+        "transition-left-to-right": false
       },
       "modules": [
         "custom/power",
         "custom/quit",
         "custom/lock",
-        "custom/reboot",
+        "custom/reboot"
       ]
     },
     "custom/quit": {
