@@ -158,6 +158,6 @@ symbol = ' '
 
 [conda]
 style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$environment]($style)[](fg:overlay) "
+format = "[](fg:overlay)[$symbol$environment($virtualenv))]($style)[](fg:overlay) "
 disabled = false
 symbol = '🅒 '
