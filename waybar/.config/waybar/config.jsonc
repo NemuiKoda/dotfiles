@@ -117,13 +117,14 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "<span color='#eb6f92'>{icon}</span>",
+        "format": "<span color='#ebbcba'>{icon}</span>",
         "tooltip-format": "{capacity}% {timeTo}",
         "format-full": "<span color='#e0def4'>{icon}</span>",
         "format-charging": "<span color='#9ccfd8'>{icon}</span>",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
+        "format-warning": "<span color='#eb6f92'>{icon}</span>",
         "format-icons": ["", "", "", "", ""]
     },
     "battery#bat2": {

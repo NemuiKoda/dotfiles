@@ -104,4 +104,8 @@ tooltip label {
     color: #e0def4;
 }
 
+#battery.warning, #battery.critical {
+    background-color: transparent;  
+}
+
 
