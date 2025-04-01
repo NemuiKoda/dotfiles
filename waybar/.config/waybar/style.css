@@ -1,3 +1,5 @@
+@import 'colors.css';
+
 * {
   border: none;
   margin-top: 1px;
@@ -16,36 +18,33 @@ window#waybar {
 
 .modules-left, .modules-center, .modules-right {
    border-radius: 12px;
-   background-color: #191724
+   background-color: @base;
 }
 
 #tools { 
-  border: 1px solid #524f67; 
+  border: 1px solid @muted; 
   border-radius: 12px;
   margin: 4px 4px 4px 4px;
-  padding: 0px 8px 0px 8px
+  padding: 0px 8px 0px 8px;
 } 
-
-#group-power {
-}
 
 #custom-apps, #workspaces, #window, #clock, #network {
    border-radius: 12px;
-   background-color: #26233a;
-   color: #e0def4; 
+   background-color: @overlay;
+   color: @text; 
    margin: 4px 4px 4px 4px;
    padding-right: 8px;
    padding-left: 8px;
 }
 
 #custom-apps {
-   border: 1px solid #31748f;
-   font-size: 16px
+   border: 1px solid @pine;
+   font-size: 16px;
 }
 
 #custom-power, #custom-screenshot, #custom-quit, #custom-lock, #custom-reboot, #bluetooth {
   font-size: 22px;
-  color: #e0def4;
+  color: @text;
   margin: 4px 4px 4px 4px;
   padding-right: 2px;
   padding-left: 2px;
@@ -53,7 +52,7 @@ window#waybar {
 
 #backlight, #pulseaudio, #battery {
   font-size: 24px;
-  color: #e0def4;
+  color: @text;
   margin: 4px 4px 4px 4px;
   padding-right: 2px;
   padding-left: 2px;
@@ -63,16 +62,16 @@ window#waybar {
   padding-left: 4px;
   padding-right: 4px;
   border-radius: 36px;
-  color: #31748f;
-  background-color: #9ccfd8
+  color: @pine;
+  background-color: @foam;
 }
 
 #window {
-   border: 1px solid #524f67;
+   border: 1px solid @highlight-high;
 }
 
 #tray {
-   font-size: 24px
+   font-size: 24px;
 }
 
 #workspaces button {
@@ -83,25 +82,25 @@ window#waybar {
 }
 
 #workspaces button.empty {
-  color: #6e6a86;
+  color: @muted;
 }
 
 #workspaces button.active {
-  color: #21202e;
-  background: #ebbcba;
+  color: @highlight-low;
+  background: @rose;
   padding: 0px 8px 0px 8px;
 }
 
 tooltip {
     border-radius: 10px;
-    background-color: #26233a;
+    background-color: @base;
     opacity:0.9;
     padding:20px;
     margin:0px;
 }
 
 tooltip label {
-    color: #e0def4;
+    color: @text;
 }
 
 #battery.warning, #battery.critical {
