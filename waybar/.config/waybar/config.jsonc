@@ -2,7 +2,7 @@
 {
     // "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    // "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -95,7 +95,7 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%H:%M %a}",
+        "format": "{:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -132,11 +132,11 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-wifi": "<span size='x-large' color='#9ccfd8'></span>",
+        "format-ethernet": "<span size='x-large' color='#9ccfd8'></span>",
+        "tooltip-format": "{ifname} via {gwaddr}  ",
+        "format-linked": "{ifname} (No IP)  ",
+        "format-disconnected": "No Connection <span size='x-large' color='#eb6f92'></span>",
         "on-click": "networkmanager_dmenu"
     },
     "pulseaudio": {
@@ -164,7 +164,7 @@
       "all-outputs": true,
       "format": "{name}",
       "persistent-workspaces": {
-        "*": 5
+        "*": 0
       },
       "on-scroll-up": "hyprctl dispatch workspace e+1",
       "on-scroll-down": "hyprctl dispatch workspace e-1"

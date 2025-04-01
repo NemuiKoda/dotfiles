@@ -38,8 +38,10 @@ window#waybar {
 }
 
 #custom-apps {
-   border: 1px solid @pine;
-   font-size: 16px;
+/*   border: 1px solid @pine;*/
+  font-size: 16px;
+  color: @pine;
+  background-color: @foam;
 }
 
 #custom-power, #custom-screenshot, #custom-quit, #custom-lock, #custom-reboot, #bluetooth {
@@ -67,7 +69,7 @@ window#waybar {
 }
 
 #window {
-   border: 1px solid @highlight-high;
+  /* border: 1px solid @highlight-high; */
 }
 
 #tray {
