@@ -133,7 +133,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "<span size='x-large' color='#9ccfd8'></span>",
-        "format-ethernet": "<span size='x-large' color='#9ccfd8'></span>",
+        "format-ethernet": "<span color='#9ccfd8'></span>",
         "tooltip-format": "{ifname} via {gwaddr}  ",
         "format-linked": "{ifname} (No IP)  ",
         "format-disconnected": "No Connection <span size='x-large' color='#eb6f92'></span>",
