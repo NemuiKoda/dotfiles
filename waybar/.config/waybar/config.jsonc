@@ -9,10 +9,11 @@
     "modules-left": [
         "custom/apps",
         "tray",
-        "hyprland/window"
+        "niri/window"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+       // "hyprland/workspaces"
+       "niri/workspaces"
     ],
     "modules-right": [
         "group/group-power",
@@ -137,7 +138,7 @@
         "tooltip-format": "{ifname} via {gwaddr}  ",
         "format-linked": "{ifname} (No IP)  ",
         "format-disconnected": "No Connection <span size='x-large' color='#eb6f92'></span>",
-        "on-click": "networkmanager_dmenu"
+        "on-click": "nmtui"
     },
     "pulseaudio": {
       "format": "<span color='#e0def4'>{icon}</span>",

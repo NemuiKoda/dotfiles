@@ -20,9 +20,12 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 # font-family = Iosevka
-theme = rose-pine
+theme = dark:Rose Pine,light: Rose Pine Dawn
 background-opacity=0.95
 window-padding-x = 12
+window-padding-y = 8 
+window-padding-balance = true
+window-decoration = auto
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
