@@ -17,6 +17,7 @@ $rust\
 $scala\
 $conda\
 $python\
+$container\
 $time\n  \
 [󱞪](fg:iris) \
 """
@@ -170,3 +171,9 @@ style = "bg:overlay fg:pine"
 format = "[](fg:overlay)[$symbol$environment($virtualenv))]($style)[](fg:overlay) "
 disabled = false
 symbol = '🅒 '
+
+[container]
+style = "bg:overlay fg:pine"
+format = "[](fg:overlay)[$symbol $name]($style)[](fg:overlay) "
+disabled = false
+symbol = ' '
